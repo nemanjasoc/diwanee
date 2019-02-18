@@ -4,7 +4,6 @@ body {
 	font-family: arial, verdana, sans-serif;
 }
 
-
 .main-container {
     max-width: 1440px;
     width: 100%;
@@ -175,7 +174,6 @@ hr {
 	padding: 0 20px;
 }
 
-
 .main-content2 {
     max-width: 1440px;
     margin: 0 auto;
@@ -210,7 +208,6 @@ hr {
 	color: #555;
 	width: 50%;
 }
-
 
 .main-content3 {
     max-width: 1440px;
@@ -358,7 +355,6 @@ hr {
     color: #bbb;
 }
 
-
 .main-content4 {
     max-width: 1440px;
     width: 100%;
@@ -377,7 +373,6 @@ hr {
     background: rgb(220,220,220);
     cursor: default;
 }
-
 
 .main-content5 {
     max-width: 1440px;
@@ -430,7 +425,6 @@ hr {
 	width: 78%;
 }
 
-
 .main-content6 {
 	max-width: 1440px;
     width: 100%;
@@ -446,7 +440,6 @@ hr {
     color: #bbb;
     font-size: 18px;
 }
-
 
 .main-content7 {
 	max-width: 1440px;
@@ -482,7 +475,6 @@ hr {
 .icons ul li:nth-child(2) {
 	background: #3b5998;
 }
-
 
 .main-content8 {
 	max-width: 1440px;
@@ -552,8 +544,6 @@ hr {
     width: 33.33%;
 }
 
-
-
 /*footer*/
 
 .footer {
@@ -615,12 +605,8 @@ hr {
 	padding-top: 18px;
 }
 
-
 /*mobile styles*/
 @media only screen and (max-width: 480px) {
-    
-
-
 .shape {
     width: 100%;
 }
@@ -672,18 +658,14 @@ hr {
 }
 }
 
-
 /*tablet styles*/
 @media only screen and (min-width: 481px) and (max-width: 768px) {
 
 
 }
 
-
 /*desktop styles*/
 @media only screen and (min-width: 769px) {
 
 
 }
-
- 
