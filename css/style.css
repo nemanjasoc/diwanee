@@ -54,6 +54,10 @@ hr {
     width: 50px;
 }
 
+.shorter-title {
+    display: none;
+}
+
 .main-title p {
     font-size: 23px;
     width: 48%;
@@ -202,6 +206,11 @@ li a {
     width: 70px;
 }
 
+.inner-button:hover {
+    background: #80808063;
+    color: black;
+}
+
 .check-in {
 	display: flex;
 	justify-content: flex-end;
@@ -213,6 +222,11 @@ li a {
     padding: 8px 28px;
     cursor: pointer;
     width: 86px;
+}
+
+.check-in-button:hover {
+    background: #80808063;
+    color: rgb(210,0,50);
 }
 
 .knowledge-list:nth-child(2) {
@@ -232,12 +246,22 @@ li a {
     width: 70px;
 }
 
+.inner-button-gray:hover {
+    background: white;
+    color: black;
+}
+
 .check-in-button-gray {
 	border: 2px solid #bbb;
     padding: 8px 28px;
     cursor: pointer;
     color: #aaa;
     width: 86px;
+}
+
+.check-in-button-gray:hover {
+    background: #80808063;
+    color: rgb(210,0,50);
 }
 
 /* more position title*/
@@ -258,6 +282,11 @@ li a {
     color: #555;
     background: rgb(220,220,220);
     cursor: pointer;
+}
+
+.more-positions-button:hover {
+    background-color: #80808063;
+    color: white;
 }
 
 /* company content */
@@ -341,6 +370,7 @@ li a {
     height: 65px;
     text-align: center;
     background: #00aced;
+    cursor: pointer;
 }
 
 .twitter .fa-twitter {
@@ -354,6 +384,7 @@ li a {
     height: 65px;
     text-align: center;
     background: #3b5998;
+    cursor: pointer;
 }
 
 .facebook .fa-facebook {
@@ -449,13 +480,7 @@ li a {
 @media only screen and (min-width: 768px) and (max-width: 992px) {
 
     .header {
-        width: 88%;
-    }
-
-    .diwanee-logo img {
-        width: 120px;
-        height: 30px;
-        margin-top: 10px;
+        width: 90%;
     }
 
     .informations {
@@ -468,51 +493,16 @@ li a {
 
     .fa-bars {
         margin-bottom: 15px;
-        font-size: 20px;
+        font-size: 30px;
         cursor: pointer;
     }
 
-    .main-title {
-       padding-bottom: 80px;
-    }
-
     .main-title h1 {
-        font-size: 40px;
-    }
-
-    .main-title p {
-        font-size: 16px;
-        width: 48%;
-        margin: 25px auto 0 auto;
+        font-size: 55px;
     }
 
     hr {
         width: 35px;
-    }
-
-    .shape img {
-        width: 45px;
-    }
-
-    .shape h2 {
-        font-size: 15px;
-    }
-
-    .shape p {
-        font-size: 15px;
-    }
-
-    .job h4 {
-        font-size: 15px;
-    }
-
-    .title h1 {
-        font-size: 42px;
-    }
-
-    .content-job p {
-        font-size: 17px;
-        width: 65%;
     }
 
     .position-title h2 {
@@ -548,22 +538,8 @@ li a {
         width: 70px;
     }
 
-    .more-positions-button {
-        padding: 8px 8px;
-        font-size: 15px;
-    }
-
-    .title-city h4 {
-        font-size: 15px;
-    }
-
     .title-company h1 {
-        font-size: 38px;
-    }
-
-    .content-company-details p {
-        font-size: 17px;
-        line-height: 140%;
+        font-size: 35px;
     }
 
     .locations {
@@ -605,6 +581,244 @@ li a {
     }
 }
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-    
+@media only screen and (min-width: 591px) and (max-width: 767px) {
+
+    .header {
+        width: 90%;
+    }
+
+    .informations {
+       display: none;
+    }
+
+    .bars {
+        display: inline-block; 
+    }
+
+    .fa-bars {
+        margin-bottom: 28px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .main-title {
+        padding-bottom: 80px;
+    }
+
+    .main-title h1 {
+        font-size: 55px;
+    }
+
+    .main-title p {
+        display: none;
+    }
+
+    .shorter-title {
+        display: inline;
+        font-weight: 500;
+        font-size: 24px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .shape img {
+        width: 50px;
+    }
+
+    .shape h2 {
+        font-size: 15px;
+    }
+
+    .shape p {
+        font-size: 15px;
+    }
+
+    .content-job p {
+        width: 72%;
+    }
+
+    .position-skills p {
+        width: 98%;
+    }
+
+    .knowledge-list {
+        background: rgb(247,247,247);
+    }
+
+    .knowledge-list:nth-child(2) {
+        background: white;
+        color: black;
+    }
+
+    .check-in-button {
+        display: none;
+    }
+
+    .inner-button {
+        padding: 6px 15px;
+        font-size: 13px;
+        width: 60px;
+    }
+
+    .inner-button-gray {
+        color: red;
+        padding: 6px 15px;
+        font-size: 13px;
+        width: 60px;
+    }
+
+    .inner-button-gray:hover {
+        background: #80808063;
+        color: black;
+    }
+
+    .check-in-button-gray {
+        display: none;
+    }
+
+    .title-city h4 {
+        font-size: 15px;
+    }
+
+    .title-company h1 {
+        font-size: 35px;
+        width: 50%;
+    }
+
+    .more-positions-button {
+        margin-top: 100px;
+    }
+
+    .company-content {
+        margin-top: 100px;
+    }
+
+    .content-company-details p {
+        font-size: 17px;
+        line-height: 140%;
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 566px) and (max-width: 590px) {
+
+    .header {
+        width: 90%;
+    }
+
+    .informations {
+       display: none;
+    }
+
+    .bars {
+        display: inline-block; 
+    }
+
+    .fa-bars {
+        margin-bottom: 28px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .main-title {
+        padding-bottom: 80px;
+    }
+
+    .main-title h1 {
+        font-size: 55px;
+    }
+
+    .main-title p {
+        display: none;
+    }
+
+    .shorter-title {
+        display: inline;
+        font-weight: 500;
+        font-size: 24px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .shape {
+        width: 100%;
+    }
+
+    .knowledge-list {
+        background: rgb(247,247,247);
+    }
+
+    .knowledge-list:nth-child(2) {
+        background: white;
+    }
+
+    .content-job p {
+        width: 72%;
+    }
+
+    .check-in-button {
+        display: none;
+    }
+
+    .inner-button {
+        padding: 6px 15px;
+        font-size: 13px;
+        width: 60px;
+    }
+
+    .inner-button-gray {
+        color: red;
+        padding: 6px 15px;
+        font-size: 13px;
+        width: 60px;
+    }
+
+    .inner-button-gray:hover {
+        background: #80808063;
+        color: black;
+    }
+
+    .check-in-button-gray {
+        display: none;
+    }
+
+    .title-city h4 {
+        font-size: 15px;
+    }
+
+    .title-company h1 {
+        font-size: 35px;
+        width: 50%;
+    }
+
+    .more-positions-button {
+        margin-top: 100px;
+    }
+
+    .company-content {
+        margin-top: 100px;
+    }
+
+    .content-company-details p {
+        font-size: 17px;
+        line-height: 140%;
+        width: 90%;
+    }
+
+    .city {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .city-name {
+        font-size: 19px;
+    }
+
+    .city p {
+        font-size: 17px;
+    }
 }
