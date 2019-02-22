@@ -1,13 +1,15 @@
 body {
-	margin: 0;
-	padding: 0;
-	font-family: arial, verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: arial, verdana, sans-serif;
 }
 
 /* banner */
 
 .banner {
-    background: url('../img/diwanee-desktop.jpg') center no-repeat;
+    background-image: url('../img/diwanee-desktop.jpg');
+    background-position: center;
+    background-size: cover;
     height: 512px;
     display: flex;
     justify-content: center;
@@ -18,7 +20,7 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    width: 58%;
+    width: 64%;
     margin-bottom: 50px;
 }
 
@@ -42,7 +44,7 @@ body {
 }
 
 .main-title {
-	text-align: center;
+    text-align: center;
     padding-bottom: 60px;
 }
 
@@ -77,12 +79,9 @@ li a {
 /* boxes */
 
 .content-boxes {
-    max-width: 1440px;
-    width: 100%;
-    margin: 0 auto;
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .shape {
@@ -95,68 +94,59 @@ li a {
 }
 
 .shape:nth-child(2) {
-	background: rgb(220,220,220);
+    background: rgb(220,220,220);
 }
 
 .shape h2 {
-	font-size: 17px;
-	margin-top: 20px;
-	margin-bottom: 35px;
+    font-size: 17px;
+    margin-top: 20px;
+    margin-bottom: 35px;
 }
 
 .shape p {
-	font-size: 17px;
-	color: #999;
-	margin-top: 35px;
-	padding: 0 20px;
+    font-size: 17px;
+    color: #999;
+    margin-top: 35px;
+    padding: 0 20px;
 }
 
 /* main content */
 
 .main-content {
-    max-width: 1440px;
     margin: 130px auto 45px auto;
 }
 
-.job {
+.job,
+.title,
+.content-job {
     display: flex;
     justify-content: center;
 }
 
 .job h4 {
-	color: #bbb;
+    color: #bbb;
 }
 
 .title {
-	display: flex;
-    justify-content: center;
     margin-top: -30px;
 }
 
 .title h1 {
-	font-size: 50px;
+    font-size: 50px;
 }
 
 .content-job {
-	display: flex;
-    justify-content: center;
     margin-top: 20px;
     text-align: center;
 }
 
 .content-job p {
     font-size: 24px;
-	color: #555;
-	width: 60%;
+    color: #555;
+    width: 60%;
 }
 
 /* skills */
-
-.skills {
-    max-width: 1440px;
-    width: 100%;
-    margin: 0 auto;
-}
 
 .knowledge-list {
     display: flex;
@@ -165,36 +155,29 @@ li a {
 }
 
 .job-position {
-	display: flex;
+    display: flex;
     justify-content: center;
     flex-direction: column;
     margin-bottom: 90px;
     margin-top: 90px;
 }
 
-.position-title {
-	display: flex;
-    justify-content: flex-start;
-}
-
-.position-skills {
-    display: flex;
-	justify-content: flex-start;
-}
-
-.position-skills p {
-    line-height: 150%;
-	color: #555;
-	font-size: 20px;
-    width: 69%;
-}
-
+.position-title,
+.position-skills,
 .skill-buttons {
     display: flex;
     justify-content: flex-start;
 }
 
-.inner-button {
+.position-skills p {
+    line-height: 150%;
+    color: #555;
+    font-size: 20px;
+    width: 69%;
+}
+
+.inner-button,
+.inner-button-black {
     border: 1px solid gray;
     padding: 8px 18px;
     margin-top: 15px;
@@ -212,19 +195,21 @@ li a {
 }
 
 .check-in {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.check-in-button {
+.check-in-button,
+.check-in-button-black {
     border: 2px solid black;
     padding: 8px 28px;
     cursor: pointer;
     width: 86px;
 }
 
-.check-in-button:hover {
+.check-in-button:hover,
+.check-in-button-black:hover {
     background: #80808063;
     color: rgb(210,0,50);
 }
@@ -234,51 +219,30 @@ li a {
     color: #bbb;
 }
 
-.inner-button-gray {
-    border: 1px solid gray;
-    padding: 8px 18px;
-    margin-top: 15px;
-    margin-right: 10px;
-    cursor: pointer;
+.inner-button-black {
     color: #bbb;
-    text-align: center;
-    font-size: 15px;
-    width: 70px;
 }
 
-.inner-button-gray:hover {
+.inner-button-black:hover {
     background: white;
     color: black;
 }
 
-.check-in-button-gray {
-	border: 2px solid #bbb;
-    padding: 8px 28px;
-    cursor: pointer;
+.check-in-button-black {
     color: #aaa;
-    width: 86px;
-}
-
-.check-in-button-gray:hover {
-    background: #80808063;
-    color: rgb(210,0,50);
+    border: 2px solid #bbb;
 }
 
 /* more position title*/
 
 .more-positions-title {
-    max-width: 1440px;
-    width: 100%;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
 }
 
 .more-positions-button {
-	margin-top: 50px;
-    text-align: center;
-	border: none;
-	padding: 10px 10px;
+    margin-top: 50px;
+    padding: 10px 10px;
     color: #555;
     background: rgb(220,220,220);
     cursor: pointer;
@@ -292,64 +256,47 @@ li a {
 /* company content */
 
 .company-content {
-    max-width: 1440px;
-    width: 100%;
-    margin: 0 auto;
     background: rgb(247,247,247);
     margin-top: 140px;
     padding-bottom: 50px; 
 }
 
-.title-city {
-    display: flex;
-    justify-content: center;
-}
-
-.title-city h4 {
-	color: #888;
-    margin-top: 80px;
-}
-
+.title-city,
 .title-company {
     display: flex;
     justify-content: center;
 }
 
-.title-company h1 {
-	text-align: center;
-	font-size: 50px;
-	margin-bottom: 50px;
-	font-weight: 300;
+.title-city h4 {
+    color: #888;
+    margin-top: 80px;
 }
 
-.content-company-details {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+.title-company h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+    font-weight: 300;
 }
 
 .content-company-details p {
     font-size: 24px;
-	text-align: left;
-	color: #555;
-	margin-top: 50px;
-	line-height: 150%;
-	padding: 0 10%;
+    text-align: left;
+    color: #555;
+    margin-top: 50px;
+    line-height: 150%;
+    padding: 0 10%;
 }
 
 /* title */
 
 .title-follow {
-	max-width: 1440px;
-    width: 100%;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
 }
 
 .title-follow h4 {
-	margin-top: 125px;
+    margin-top: 125px;
     color: #bbb;
     font-size: 18px;
 }
@@ -357,14 +304,12 @@ li a {
 /* social networks */
 
 .social-networks {
-	max-width: 1440px;
-    width: 100%;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
 }
 
-.twitter {
+.twitter,
+.facebook {
     margin-right: 30px;
     width: 65px;
     height: 65px;
@@ -373,32 +318,24 @@ li a {
     cursor: pointer;
 }
 
-.twitter .fa-twitter {
+.twitter .fa-twitter,
+.facebook .fa-facebook {
     font-size: 32px;
     color: white;
     margin-top: 16px;
 }
 
 .facebook {
-    width: 65px;
-    height: 65px;
-    text-align: center;
     background: #3b5998;
-    cursor: pointer;
 }
 
 .facebook .fa-facebook {
-    color: white;
     margin-top: 18px;
-    font-size: 32px;
 }
 
 /* footer */
 
 .footer {
-	max-width: 1440px;
-    width: 100%;
-    margin: 0 auto;
     background: #111;
     color: #bbb;
     margin-top: 125px;
@@ -435,17 +372,14 @@ li a {
 }
 
 .footer-informations {
-    max-width: 1440px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 12% 0 10%;
+    padding: 0 17% 0 10%;
 }
 
 .footer-copyright {
     padding-top: 18px;
-    display: flex;
-    justify-content: flex-start;
     padding-bottom: 18px;
     color: #555;
 }
@@ -453,7 +387,6 @@ li a {
 .icons {
     color: #555;
     display: flex;
-    justify-content: flex-end;
     padding-top: 15px;
     padding-bottom: 10px;
 }
@@ -517,25 +450,15 @@ li a {
         width: 86%;
     }
 
-    .inner-button {
+    .inner-button,
+    .inner-button-black {
         padding: 6px 15px;
         font-size: 13px;
         width: 60px;
     }
 
-    .check-in-button {
-        padding: 8px 22px;
-        font-size: 13px;
-        width: 70px;
-    }
-
-    .inner-button-gray {
-        padding: 6px 15px;
-        font-size: 13px;
-        width: 60px;
-    }
-
-    .check-in-button-gray {
+    .check-in-button,
+    .check-in-button-black {
         padding: 8px 22px;
         font-size: 13px;
         width: 70px;
@@ -553,7 +476,9 @@ li a {
         font-size: 15px;
     }
 
-    .city p {
+    .city p,
+    .footer-copyright,
+    .site {
         font-size: 14px;
     }
 
@@ -563,10 +488,6 @@ li a {
 
     .footer-informations {
         padding: 0 12% 0 7%;
-    }
-
-    .footer-copyright {
-        font-size: 14px;
     }
 
     .icons {
@@ -582,10 +503,6 @@ li a {
         padding-right: 10px;
         padding-left: 20px;
     }
-
-    .site {
-        font-size: 14px;
-    }
 }
 
 @media only screen and (min-width: 591px) and (max-width: 767px) {
@@ -594,7 +511,11 @@ li a {
         width: 90%;
     }
 
-    .informations {
+    .informations,
+    .main-title p,
+    hr,
+    .check-in-button,
+    .check-in-button-black {
        display: none;
     }
 
@@ -616,29 +537,20 @@ li a {
         font-size: 55px;
     }
 
-    .main-title p {
-        display: none;
-    }
-
     .shorter-title {
         display: inline;
         font-weight: 500;
         font-size: 24px;
     }
 
-    hr {
-        display: none;
-    }
-
     .shape img {
         width: 50px;
     }
 
-    .shape h2 {
-        font-size: 15px;
-    }
-
-    .shape p {
+    .shape h2,
+    .shape p,
+    .title-city h4,
+    .city-name {
         font-size: 15px;
     }
 
@@ -659,25 +571,13 @@ li a {
         color: black;
     }
 
-    .check-in-button {
-        display: none;
-    }
-
-    .inner-button-gray {
+    .inner-button-black {
         color: red;
     }
 
-    .inner-button-gray:hover {
+    .inner-button-black:hover {
         background: #80808063;
         color: black;
-    }
-
-    .check-in-button-gray {
-        display: none;
-    }
-
-    .title-city h4 {
-        font-size: 15px;
     }
 
     .title-company h1 {
@@ -685,10 +585,7 @@ li a {
         width: 50%;
     }
 
-    .more-positions-button {
-        margin-top: 100px;
-    }
-
+    .more-positions-button,
     .company-content {
         margin-top: 100px;
     }
@@ -696,10 +593,6 @@ li a {
     .content-company-details p {
         font-size: 17px;
         line-height: 140%;
-    }
-
-    .city-name {
-        font-size: 15px;
     }
 
     p {
@@ -719,7 +612,11 @@ li a {
         width: 90%;
     }
 
-    .informations {
+    .informations,
+    .main-title p,
+    hr,
+    .check-in-button,
+    .check-in-button-black {
        display: none;
     }
 
@@ -741,21 +638,14 @@ li a {
         font-size: 55px;
     }
 
-    .main-title p {
-        display: none;
-    }
-
     .shorter-title {
         display: inline;
         font-weight: 500;
         font-size: 24px;
     }
 
-    hr {
-        display: none;
-    }
-
-    .shape {
+    .shape,
+    .position-skills p {
         width: 100%;
     }
 
@@ -772,25 +662,13 @@ li a {
         width: 72%;
     }
 
-    .position-skills p {
-        width: 100%;
-    }
-
-    .check-in-button {
-        display: none;
-    }
-
-    .inner-button-gray {
+    .inner-button-black {
         color: red;
     }
 
-    .inner-button-gray:hover {
+    .inner-button-black:hover {
         background: #80808063;
         color: black;
-    }
-
-    .check-in-button-gray {
-        display: none;
     }
 
     .footer {
@@ -806,10 +684,7 @@ li a {
         width: 50%;
     }
 
-    .more-positions-button {
-        margin-top: 100px;
-    }
-
+    .more-positions-button,
     .company-content {
         margin-top: 100px;
     }
