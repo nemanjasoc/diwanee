@@ -147,7 +147,7 @@ li a {
 .content-job p {
     font-size: 24px;
 	color: #555;
-	width: 50%;
+	width: 60%;
 }
 
 /* skills */
@@ -161,7 +161,7 @@ li a {
 .knowledge-list {
     display: flex;
     justify-content: space-between;
-    padding: 0 15%;
+    padding: 0 10%;
 }
 
 .job-position {
@@ -335,7 +335,7 @@ li a {
 	color: #555;
 	margin-top: 50px;
 	line-height: 150%;
-	padding: 0 15%;
+	padding: 0 10%;
 }
 
 /* title */
@@ -408,7 +408,7 @@ li a {
 .locations {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 15%;
+    padding-left: 10%;
     color: #555;
     line-height: 150%;
 }
@@ -436,11 +436,10 @@ li a {
 
 .footer-informations {
     max-width: 1440px;
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 70%;
+    padding: 0 12% 0 10%;
 }
 
 .footer-copyright {
@@ -505,6 +504,10 @@ li a {
         width: 35px;
     }
 
+    .content-job p {
+        width: 76%;
+    }
+
     .position-title h2 {
         font-size: 21px;
     }
@@ -559,25 +562,29 @@ li a {
     }
 
     .footer-informations {
-        width: 86%;
+        padding: 0 12% 0 7%;
     }
 
     .footer-copyright {
-        font-size: 13px;
+        font-size: 14px;
+    }
+
+    .icons {
+        padding-top: 17px;
     }
 
     .fa-linkedin {
-        font-size: 15px;
+        font-size: 17px;
     }
 
     .fa-twitter {
-        font-size: 15px;
+        font-size: 17px;
         padding-right: 10px;
         padding-left: 20px;
     }
 
     .site {
-        font-size: 13px;
+        font-size: 14px;
     }
 }
 
@@ -656,17 +663,8 @@ li a {
         display: none;
     }
 
-    .inner-button {
-        padding: 6px 15px;
-        font-size: 13px;
-        width: 60px;
-    }
-
     .inner-button-gray {
         color: red;
-        padding: 6px 15px;
-        font-size: 13px;
-        width: 60px;
     }
 
     .inner-button-gray:hover {
@@ -698,7 +696,20 @@ li a {
     .content-company-details p {
         font-size: 17px;
         line-height: 140%;
-        width: 90%;
+    }
+
+    .city-name {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 15px;
+        padding-right: 3px; 
+    }
+
+    .footer-copyright {
+        font-size: 14px;
+        padding-bottom: 0px;
     }
 }
 
@@ -754,27 +765,23 @@ li a {
 
     .knowledge-list:nth-child(2) {
         background: white;
+        color: black;
     }
 
     .content-job p {
         width: 72%;
     }
 
+    .position-skills p {
+        width: 100%;
+    }
+
     .check-in-button {
         display: none;
     }
 
-    .inner-button {
-        padding: 6px 15px;
-        font-size: 13px;
-        width: 60px;
-    }
-
     .inner-button-gray {
         color: red;
-        padding: 6px 15px;
-        font-size: 13px;
-        width: 60px;
     }
 
     .inner-button-gray:hover {
@@ -784,6 +791,10 @@ li a {
 
     .check-in-button-gray {
         display: none;
+    }
+
+    .footer {
+        padding-top: 30px;
     }
 
     .title-city h4 {
@@ -806,19 +817,31 @@ li a {
     .content-company-details p {
         font-size: 17px;
         line-height: 140%;
-        width: 90%;
     }
 
     .city {
         width: 100%;
-        margin-top: 25px;
+        margin-top: 30px;
     }
 
     .city-name {
-        font-size: 19px;
+        font-size: 22px;
     }
 
     .city p {
-        font-size: 17px;
+        font-size: 20px;
+    }
+
+    .footer-copyright {
+        font-size: 14px;
+        padding-bottom: 0px;
+    }
+
+    .fa-linkedin {
+        font-size: 18px;
+    }
+
+    .fa-twitter {
+        font-size: 19px;
     }
 }
