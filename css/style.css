@@ -76,6 +76,10 @@ li a {
     text-decoration: none;
 }
 
+li a:active {
+    font-weight: 700;
+}
+
 /* boxes */
 
 .content-boxes {
@@ -189,9 +193,12 @@ li a {
     width: 70px;
 }
 
-.inner-button:hover {
+.inner-button:active {
     background: #80808063;
     color: black;
+    -ms-transform: translate(0px, 10px);
+    -webkit-transform: translate(0px, 10px);     
+    transform: translate(0px, 10px); 
 }
 
 .check-in {
@@ -208,10 +215,13 @@ li a {
     width: 86px;
 }
 
-.check-in-button:hover,
-.check-in-button-black:hover {
+.check-in-button:active,
+.check-in-button-black:active {
     background: #80808063;
     color: rgb(210,0,50);
+    -ms-transform: scale(1.2, 1.2);
+    -webkit-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
 }
 
 .knowledge-list:nth-child(2) {
@@ -223,9 +233,12 @@ li a {
     color: #bbb;
 }
 
-.inner-button-black:hover {
+.inner-button-black:active {
     background: white;
     color: black;
+    -ms-transform: translate(0px, 10px);
+    -webkit-transform: translate(0px, 10px);     
+    transform: translate(0px, 10px); 
 }
 
 .check-in-button-black {
@@ -248,9 +261,12 @@ li a {
     cursor: pointer;
 }
 
-.more-positions-button:hover {
+.more-positions-button:active {
     background-color: #80808063;
     color: white;
+    -ms-transform: scale(0.8, 0.8);
+    -webkit-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8);
 }
 
 /* company content */
@@ -316,6 +332,18 @@ li a {
     text-align: center;
     background: #00aced;
     cursor: pointer;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.twitter:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.facebook:hover {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
 }
 
 .twitter .fa-twitter,
@@ -613,7 +641,6 @@ li a {
 
     .header {
         width: 90%;
-        margin-top: -75px;
     }
 
     .informations,
@@ -663,12 +690,16 @@ li a {
         color: black;
     }
 
+    .skill-buttons {
+        flex-wrap: wrap;
+    }
+
     .content-job p {
         width: 72%;
     }
 
     .inner-button-black {
-        color: red;
+        color: rgb(210,0,50);
     }
 
     .inner-button-black:hover {
