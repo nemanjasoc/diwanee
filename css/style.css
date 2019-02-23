@@ -413,6 +413,7 @@ li a {
 
     .header {
         width: 90%;
+        margin-top: 20px;
     }
 
     .informations {
@@ -505,10 +506,11 @@ li a {
     }
 }
 
-@media only screen and (min-width: 591px) and (max-width: 767px) {
+@media only screen and (min-width: 577px) and (max-width: 767px) {
 
     .header {
         width: 90%;
+        margin-top: -75px;
     }
 
     .informations,
@@ -531,6 +533,7 @@ li a {
 
     .main-title {
         padding-bottom: 80px;
+        margin-top: 20px;
     }
 
     .main-title h1 {
@@ -606,10 +609,11 @@ li a {
     }
 }
 
-@media only screen and (min-width: 566px) and (max-width: 590px) {
+@media only screen and (max-width: 576px) {
 
     .header {
         width: 90%;
+        margin-top: -75px;
     }
 
     .informations,
@@ -632,6 +636,7 @@ li a {
 
     .main-title {
         padding-bottom: 80px;
+        margin-top: 20px;
     }
 
     .main-title h1 {
