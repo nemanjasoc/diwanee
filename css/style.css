@@ -21,7 +21,6 @@ body {
     display: flex;
     justify-content: space-between;
     width: 64%;
-    margin-bottom: 50px;
 }
 
 .diwanee-logo {
@@ -41,6 +40,69 @@ body {
 
 .bars {
     display: none;
+}
+
+.dropbtn {
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dropbtn:active {
+    -ms-transform: scale(1.2, 1.2);
+    -webkit-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    height: 383px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+.dropdown-content a {
+    color: #555;
+    padding: 25px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    -webkit-transition: color 1s;
+    transition: color 1s;
+}
+
+.dropdown-content li {
+    display: block;
+    text-align: center;
+}
+
+.show {
+    display: block;
+}
+
+.dropdown-links {
+    padding-top: 65px;
+    padding-bottom: 40px;
+}
+
+.nav-footer {
+    display: flex;
+    justify-content: space-around;
+    color: #555;
+}
+
+.nav-footer-icons .fa-twitter {
+    padding-right: 30px;
 }
 
 .main-title {
@@ -440,7 +502,7 @@ li a:active {
 @media only screen and (min-width: 768px) and (max-width: 992px) {
 
     .header {
-        width: 90%;
+        width: 100%;
         margin-top: 20px;
     }
 
@@ -460,6 +522,10 @@ li a:active {
 
     .main-title h1 {
         font-size: 55px;
+    }
+
+    .main-title p {
+        width: 58%;
     }
 
     hr {
@@ -537,7 +603,7 @@ li a:active {
 @media only screen and (min-width: 577px) and (max-width: 767px) {
 
     .header {
-        width: 90%;
+        width: 100%;
         margin-top: -75px;
     }
 
@@ -559,9 +625,12 @@ li a:active {
         cursor: pointer;
     }
 
+    .dropdown-content {
+        height: 371px;
+    }
+
     .main-title {
         padding-bottom: 80px;
-        margin-top: 20px;
     }
 
     .main-title h1 {
@@ -637,10 +706,11 @@ li a:active {
     }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 577px) {
 
     .header {
-        width: 90%;
+        width: 100%;
+        margin-top: -55px;
     }
 
     .informations,
@@ -659,6 +729,10 @@ li a:active {
         margin-bottom: 28px;
         font-size: 30px;
         cursor: pointer;
+    }
+
+    .dropdown-content {
+        height: 371px;
     }
 
     .main-title {
