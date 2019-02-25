@@ -388,7 +388,6 @@ li a:active {
 
 .twitter,
 .facebook {
-    margin-right: 30px;
     width: 65px;
     height: 65px;
     text-align: center;
@@ -415,8 +414,13 @@ li a:active {
     margin-top: 16px;
 }
 
+.twitter {
+    margin-right: 15px;
+}
+
 .facebook {
     background: #3b5998;
+    margin-left: 15px;
 }
 
 .facebook .fa-facebook {
@@ -589,11 +593,11 @@ li a:active {
         padding-top: 17px;
     }
 
-    .fa-linkedin {
+    .icons .fa-linkedin {
         font-size: 17px;
     }
 
-    .fa-twitter {
+    .icons .fa-twitter {
         font-size: 17px;
         padding-right: 10px;
         padding-left: 20px;
@@ -706,7 +710,7 @@ li a:active {
     }
 }
 
-@media only screen and (max-width: 577px) {
+@media only screen and (min-width: 480px) and (max-width: 576px) {
 
     .header {
         width: 100%;
@@ -822,11 +826,167 @@ li a:active {
         padding-bottom: 0px;
     }
 
-    .fa-linkedin {
+    .icons .fa-linkedin {
         font-size: 18px;
     }
 
-    .fa-twitter {
+    .icons .fa-twitter {
         font-size: 19px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+
+    .header {
+        width: 100%;
+        margin-top: -55px;
+    }
+
+    .informations,
+    .main-title p,
+    hr,
+    .check-in-button,
+    .check-in-button-black {
+        display: none;
+    }
+
+    .bars {
+        display: inline-block; 
+    }
+
+    .fa-bars {
+        margin-bottom: 28px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .dropdown-content {
+        height: 403px;
+    }
+
+    .main-title {
+        padding-bottom: 80px;
+        margin-top: 20px;
+    }
+
+    .main-title h1 {
+        font-size: 55px;
+    }
+
+    .shorter-title {
+        display: inline;
+        font-weight: 500;
+        font-size: 24px;
+    }
+
+    .position-title h2 {
+        font-size: 21px;
+    }
+
+    .shape,
+    .position-skills p {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .knowledge-list {
+        background: rgb(247,247,247);
+    }
+
+    .knowledge-list:nth-child(2) {
+        background: white;
+        color: black;
+    }
+
+    .skill-buttons {
+        flex-wrap: wrap;
+    }
+
+    .job h4,
+    .title-city h4 {
+        font-size: 13px;
+    }
+
+    .title h1 {
+        font-size: 46px;
+    }
+
+    .content-job p {
+        width: 72%;
+        font-size: 20px;
+        margin-bottom: 40px;
+        margin-top: -20px;
+    }
+    
+    .inner-button,
+    .inner-button-black {
+        font-size: 13px;
+        width: 60px;
+        padding: 5px 15px;
+    }
+
+    .inner-button-black {
+        color: rgb(210,0,50);
+    }
+
+    .inner-button-black:hover {
+        background: #80808063;
+        color: black;
+    }
+
+    .footer {
+        padding-top: 30px;
+    }
+
+    .title-company h1 {
+        font-size: 33px;
+        width: 80%;
+    }
+
+    .more-positions-button,
+    .company-content {
+        margin-top: 100px;
+        font-size: 12px;
+        padding: 8px 8px;
+    }
+
+    .content-company-details p {
+        font-size: 17px;
+        line-height: 140%;
+        margin-top: 30px;
+    }
+
+    .social-networks .twitter,
+    .social-networks .facebook {
+        width: 50px;
+        height: 50px;
+    }
+
+    .twitter .fa-twitter {
+        padding-left: 14px;
+    }
+
+    .twitter .fa-twitter,
+    .facebook .fa-facebook {
+        font-size: 25px;
+        margin-top: 12px;
+    }
+
+    .city {
+        width: 100%;
+    }
+
+    .footer-copyright {
+        font-size: 12px;
+    }
+
+    .title-follow h4,
+    .icons .fa-linkedin,
+    .icons .fa-twitter {
+        font-size: 16px;
+    }
+
+    .site {
+        font-size: 15px;
     }
 }
