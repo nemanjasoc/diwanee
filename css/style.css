@@ -133,13 +133,35 @@ li {
     display: inline-block;  
 }
 
-li a {
-    color: black;
+li  a {
+    position: relative;
+    color: #000;
     text-decoration: none;
 }
 
-li a:active {
-    font-weight: 700;
+li a:hover {
+    color: #000;
+}
+
+li a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+li a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 /* boxes */
@@ -255,12 +277,15 @@ li a:active {
     width: 70px;
 }
 
-.inner-button:active {
-    background: #80808063;
-    color: black;
-    -ms-transform: translate(0px, 10px);
-    -webkit-transform: translate(0px, 10px);     
-    transform: translate(0px, 10px); 
+.more-positions-button:hover,
+.check-in-button-black:hover,
+.inner-button-black:hover,
+.check-in-button:hover,
+.inner-button:hover {
+    background: black;
+    color: white;
+    -webkit-transition: background 0.8s, color 0.8s;
+    transition: background 0.8s, color 0.8s;
 }
 
 .check-in {
@@ -277,15 +302,6 @@ li a:active {
     width: 86px;
 }
 
-.check-in-button:active,
-.check-in-button-black:active {
-    background: #80808063;
-    color: rgb(210,0,50);
-    -ms-transform: scale(1.2, 1.2);
-    -webkit-transform: scale(1.2, 1.2);
-    transform: scale(1.2, 1.2);
-}
-
 .knowledge-list:nth-child(2) {
     background: #111;
     color: #bbb;
@@ -295,12 +311,10 @@ li a:active {
     color: #bbb;
 }
 
-.inner-button-black:active {
+.check-in-button-black:hover,
+.inner-button-black:hover {
     background: white;
     color: black;
-    -ms-transform: translate(0px, 10px);
-    -webkit-transform: translate(0px, 10px);     
-    transform: translate(0px, 10px); 
 }
 
 .check-in-button-black {
@@ -323,12 +337,9 @@ li a:active {
     cursor: pointer;
 }
 
-.more-positions-button:active {
+.more-positions-button:hover {
     background-color: #80808063;
     color: white;
-    -ms-transform: scale(0.8, 0.8);
-    -webkit-transform: scale(0.8, 0.8);
-    transform: scale(0.8, 0.8);
 }
 
 /* company content */
@@ -393,15 +404,11 @@ li a:active {
     text-align: center;
     background: #00aced;
     cursor: pointer;
-    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
-    transition: width 2s, height 2s, transform 2s;
+    -webkit-transition: width 1s, height 1s, -webkit-transform 1s;
+    transition: width 1s, height 1s, transform 1s;
 }
 
-.twitter:hover {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-}
-
+.twitter:hover,
 .facebook:hover {
     -webkit-transform: rotateY(360deg);
     transform: rotateY(360deg);
